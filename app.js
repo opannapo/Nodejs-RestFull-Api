@@ -1,6 +1,6 @@
 //APP
-var express 	= require('express');
-var app 		= express();    
+var express = require('express');
+var app = express();    
 
 //MODULE EXPORTS
 module.exports={app:app}    
