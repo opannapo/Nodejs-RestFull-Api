@@ -77,3 +77,28 @@ App.post('/user/follow/', C.urlEncBodyParser, function (req, res) {
     if (authorization(req, res))
         start(require('./endpoint/user/follow.js'), req, res);
 });
+
+//TEST
+App.get('/test/get', function (req, res) {
+    start(require('./endpoint/test/get.js'), req, res);
+});
+App.get('/test/get-no-param', function (req, res) {
+    start(require('./endpoint/test/get-no-param.js'), req, res);
+});
+App.get('/test/get-auth', function (req, res) {
+    if (authorization(req, res))
+        start(require('./endpoint/test/get-auth.js'), req, res);
+});
+App.post('/test/post/', C.urlEncBodyParser, function (req, res) {
+    start(require('./endpoint/test/post.js'), req, res);
+});
+App.post('/test/post-auth/', C.urlEncBodyParser, function (req, res) {
+    if (authorization(req, res))
+        start(require('./endpoint/test/post-auth.js'), req, res);
+});
+App.post('/test/post-multipart/', function (req, res) {
+    start(require('./endpoint/test/post-multipart.js'), req, res);
+});
+App.post('/test/post-raw/', C.rawBodyParser, function (req, res) {
+    start(require('./endpoint/test/post-raw.js'), req, res);
+}); 
