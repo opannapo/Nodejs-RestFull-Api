@@ -1,0 +1,37 @@
+{
+  "name": "com.opannapo.api",
+  "version": "0.0.1",
+  "description": "API using Express 4",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "md5": "^2.2.1",
+    "mongodb": "^2.2.10",
+    "msql": "^1.0.3",
+    "body-parser": "^1.12.3",
+    "multiparty": "*",
+    "jsonwebtoken": "*",
+    "fs-extra": "*"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "node.js post",
+    "node.js upload",
+    "node.js get",
+    "node.js Multipart",
+    "node.js mysql",
+    "node.js auth",
+    "node.js jwt",
+    "node.js ResFull",
+    "node.js Example"
+  ],
+  "author": "OpannapO",
+  "license": "MIT"
+}
